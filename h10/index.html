@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework10</title>
+</head>
+<body>
+    <div class="content">
+    <img src="img/201.jpg"alt="#">
+    <h2 class="title"> Лучший помошник</h2>
+    <p class="text">Lorem, ipsum dolor.</p>
+ <script src="data.js"></script>
+<script>
+    const userData = JSON.parse(dataJs)
+    console.log(userData)
+    const contentEl = document.querySelector(`.content`);
+    
+    const titleEl = document.createElement(`h1`);
+    titleEl.classList.add(`title`);
+    titleEl.textContent=dataJs.quote_id;
+
+    const textEl = document.createElement(`p`);
+    titleEl.classList.add(`text`);
+    titleEl.textContent=dataJs.quote;
+
+    
+    
+
+</script>
+
+     
+</body>
+</html>
